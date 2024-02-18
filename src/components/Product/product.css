@@ -1,0 +1,160 @@
+/* Common styles */
+.table {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #a9a9a9;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .heading {
+    font-weight: bold;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .product-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 8px;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .label-section {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #e5e7eb;
+    background-color: #f3f4f6;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    outline: none;
+  }
+  
+  .table-row {
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .lable-edit {
+    display: flex;
+  }
+  
+  .table-cell {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .checkbox-header,
+  .checkbox-cell {
+    padding: 0 8px;
+  }
+  
+  .id-cell {
+    width: 100px;
+  }
+  
+  .date-cell {
+    width: 150px;
+  }
+  
+  .table-row {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .table-container {
+    background-color: white;
+    padding: 40px;
+  }
+  
+  .table {
+    background-color: #f3f4f6;
+    list-style-type: none;
+  }
+  
+  .gray-button {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .dispatch-button {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+  }
+  
+  .blue-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    /* Adjust table layout for small devices */
+    .table-header {
+      flex-wrap: wrap;
+      padding: 8px 4px;
+    }
+  
+    .table-cell {
+      flex: 0 0 50%;
+      padding: 8px 4px;
+    }
+  
+    .table-row {
+      flex-wrap: wrap;
+      border-bottom: none;
+      border-right: 1px solid #ccc;
+    }
+  
+    .table-row:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .table-row > * {
+      width: 100%;
+      padding: 8px 4px;
+    }
+  
+    .table-row > :nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+  
+    .table-row > :nth-child(even) {
+      background-color: whitesmoke;
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .pagination > * {
+      margin: 0 5px;
+    }
+  }
+  
